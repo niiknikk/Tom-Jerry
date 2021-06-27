@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;900&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  /* This defines what 1rem is */
+  font-size: 62.5%;
+  /* 1 rem = 10px; 10px/16px = 62.5% */
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  width: 100vw;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5rem;
+  padding: 0 2rem;
+}
+
+.text-logo {
+  margin-top: 8rem;
+}
+
+.text-logo img {
+  width: 50rem;
+}
+
+@media only screen and (max-width: 75em) {
+  .text-logo img {
+    width: 30rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .text-logo img {
+    width: 20rem;
+  }
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 12rem;
+  }
+}
+
+.card {
+  position: relative;
+  width: 60rem;
+  height: 30rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+@media only screen and (max-width: 75em) {
+  .card {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .card {
+    width: 80vw;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .card {
+    width: 90vw;
+    height: auto;
+  }
+}
+
+.card-tom {
+  background-color: #808989;
+}
+
+.card-jerry {
+  background-color: #c08129;
+}
+
+.card:hover .jerry {
+  left: 70%;
+  height: 40rem;
+}
+
+@media only screen and (max-width: 75em) {
+  .card:hover .jerry {
+    height: 35rem;
+    left: 80%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .card:hover .jerry {
+    height: 30rem;
+    top: 50%;
+    left: 50%;
+  }
+}
+
+.card:hover .tom {
+  left: 30%;
+  height: 40rem;
+}
+
+@media only screen and (max-width: 75em) {
+  .card:hover .tom {
+    height: 35rem;
+    top: -5%;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .card:hover .tom {
+    left: 25%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .card:hover .tom {
+    height: 30rem;
+    top: 50%;
+    left: 50%;
+  }
+}
+
+.card:hover .content-jerry {
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .card:hover .content-jerry {
+    top: 2%;
+    left: 10%;
+  }
+}
+
+.card:hover .content-tom {
+  left: 50%;
+  opacity: 1;
+  visibility: visible;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .card:hover .content-tom {
+    left: 40%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .card:hover .content-tom {
+    top: 10%;
+    left: 10%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .card:hover {
+    height: 70rem;
+  }
+}
+
+img {
+  position: absolute;
+  left: 50%;
+  top: -20%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 35rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 75em) {
+  img {
+    height: 30rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  img {
+    width: 25rem;
+  }
+}
+
+.content {
+  position: relative;
+  width: 50%;
+  left: 20%;
+  padding: 3rem 4rem;
+  font-size: 1.6rem;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 75em) {
+  .content {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .content {
+    width: 90%;
+    top: 50%;
+    left: 10%;
+  }
+}
+
+.content h2 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.content p {
+  color: #fff;
+}
+/*# sourceMappingURL=main.css.map */
